@@ -35,11 +35,11 @@ const proyectos = [
       "<p>A reactive human-digital-image piece has been proposed using viewers CO2 (carbon dioxide) emissions to trigger and generate a drawing-animation produced on the TouchDesigner generative environments platform, which reacts in a linked way to the input of ppm (parts per million) values from a CO2 sensor arranged in the exhibition space within a root. </p>" +
       "<p>In the center of the screen we see a 3D model of a Chagual totem [mother totem or new hybrid species] a virtual plant space that has been worked in Blender relating all the factors that would be essential for the preservation of the species: the seed, the plant, the cheap, the mice, the butterfly, the human being, the pollen, the technological resources, other plant species, etc. using as visual reference the images obtained in the field trips associated with the project. On this background, each time the ppm count obtained through the sensor goes up, the values associated with the variant that changes the position, color and speed of a group of butterflies fluttering around the Chagual are modified; the more ppm, the more butterflies in space.</p>",
     images: [
-      "/assets/proyecto_0/Foto_a.jpg",
-      "/assets/proyecto_0/Foto_b.jpg",
-      "/assets/proyecto_0/Foto_c.jpg",
-      "/assets/proyecto_0/Foto_d.jpg",
-      "/assets/proyecto_0/Foto_e.jpg",
+      "../assets/proyecto_0/Foto_a.jpg",
+      "../assets/proyecto_0/Foto_b.jpg",
+      "../assets/proyecto_0/Foto_c.jpg",
+      "../assets/proyecto_0/Foto_d.jpg",
+      "../assets/proyecto_0/Foto_e.jpg",
     ],
   },
   {
