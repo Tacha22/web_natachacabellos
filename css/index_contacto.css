@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgb(78, 78, 78) 55%, rgb(153, 153, 153) 90%);
+  --color-blanco: white ;
+  --gap-medida: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+p a {
+  display: inline;
+  text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+  display: block;
+  width: 100%;
+}
+
+svg {
+  color: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* FIN RESET*/
+
+/* Carga de tipografías en el css */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/Tipografias/Roboto_Mono/");
+}
+
+@font-face {
+  font-family: "Funnel Display";
+  src: url("/Tipografias/Funnel_Display/");
+}
+
+/* Estilos del Contacto */
+.main {
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  gap: var(--gap-medida);
+}
+
+/* Estilo para los íconos de las redes sociales */
+.main-rrss {
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-medida);
+  margin: 0 0 1rem;
+}
+
+.main-redes {
+  color: var(--color-blanco);
+}
+
+.main-svg{
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+/* Estilo para la caja del formulario */
+.main-formulario {
+  width: 70%;
+  min-height: 70vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.584);
+  color: var(--color-blanco);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+/* Estilo del título principal */
+.main-h1 {
+  font-size: 1.33em;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  animation: color-animation 4s linear infinite;
+  --color-1: #c275f9;
+  --color-2: #3d8dae;
+  --color-3: #eb8c8a;
+}
+
+
+/* Estilos del form */
+.main-fname,
+.main-lname,
+.main-subject{
+  width: 100%;
+  padding: .75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px auto 1rem;
+  resize: vertical;
+}
+
+.main-submit
+ {
+  background-color: black;
+  color: var(--color-blanco);
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  padding: .75rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-submit:hover {
+  background-color:#c275f9;
+}
+
+/* Estilos del footer */
+.footer {
+  width: 100%;
+  height: 8vh;
+}
+
+.footer-marquesina {
+  width: 100%;
+  margin: 5vh auto;
+  overflow: hidden;
+}
+/* Estilos para la animación del footer con marquesina */
+.footer-slide {
+  width: 200%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: var(--gap-medida);
+  animation: slide 10s linear infinite;
+}
+
+.footer-texto {
+  min-width: 500px;
+  font-family: "Funnel Display", sans-serif;
+  text-align: center;
+  font-size: 1em;
+  color: var(--color-blanco);
+}
+
+/* formatos extra grandes (ordenadores y otros 1200px para arriba) */
+@media (min-width: 1200px){
+  .main-wrapper {
+    margin: 20vh auto 6.25rem;
+  }
+  .main-rrss {
+    gap: 5rem;
+    margin: 0 0 3rem;
+  }
+  .main-formulario {
+    width: 60%;
+    padding: 5rem;
+    gap:20rem;
+  }
+  .main-h1 {
+    font-size: 2vw;
+    margin: 8% auto;
+  }
+
+  .main-fname,
+  .main-lname,
+  .main-subject{
+  font-size: 1.3vw;
+  margin: 3rem auto;
+}
+.main-nombre,
+.main-apellido,
+.main-asunto{
+  font-size: 1.2vw;
+}
+.main-submit {
+  width: 12vw;
+  font-size: 1.5vw;
+}
+
+}
+
+/* Gran formato (ordenadores, hasta 1200px )*/
+@media (max-width: 1200px){
+  .main-wrapper {
+    margin: 17vh auto 0;
+  }
+  .main-fname,
+  .main-lname,
+  .main-subject{
+  font-size: 1.5vw;
+  margin: 1rem auto;
+}
+.nombre,
+.apellido,
+.asunto{
+  font-size: 1.6vw;
+}
+
+.main-rrss {
+  gap: var(--gap-medida);
+}
+}
+
+/* Formato normal (ordenadores, hasta 992px ) */
+@media (max-width: 992px) {
+  .main-svg{
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+}
+
+/* Formato medio (tablets, hasta 768px) */
+@media (max-width: 768px) {
+  .main-formulario {
+    width: 90%;
+  }
+  .main-fname,
+  .main-lname,
+  .main-subject{
+  font-size: 1.8vw;
+}
+.nombre,
+.apellido,
+.asunto{
+  font-size: 2vw;
+}
+}
+
+/* Formato pequeño (móviles, 567px hacia abajo) */
+@media (max-width: 576px) {
+  .main-svg{
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+
+  32% {
+    color: var(--color-1);
+  }
+
+  33% {
+    color: var(--color-2);
+  }
+
+  65% {
+    color: var(--color-2);
+  }
+
+  66% {
+    color: var(--color-3);
+  }
+
+  99% {
+    color: var(--color-3);
+  }
+
+  100% {
+    color: var(--color-1);
+  }
+}

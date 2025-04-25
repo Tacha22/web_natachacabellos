@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+    --font-media: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0) 5%, rgb(78, 78, 78) 55%, rgb(153, 153, 153) 90%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+}
+
+svg {
+    color: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* FIN RESET*/
+
+/* Carga de tipografías en el css */
+@font-face {
+    font-family: "Abel";
+    src: url('/Tipografias/Abel/Abel-Regular.ttf')
+}
+
+/* Estilos de la biografía */
+.main {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo grid para texto e imágen */
+.main-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15vh auto 10vh;
+    column-gap: 2rem;
+}
+
+.main-texto {
+    font-family: "Abel";
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    font-size: var(--font-media);
+    padding: 0 1rem;
+    color: whitesmoke;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
+}
+
+/* Animación distinta para cada párrafo. Se desplazan de derecha al centro con un delay */
+.main-p {
+    animation: slideParrafo 2s ease 1 backwards;
+}
+
+.main-p.inicio {
+    animation-delay: .5s;
+}
+
+.main-p.medio {
+    animation-delay: .6s;
+}
+
+.main-p.final {
+    animation-delay: .7s;
+}
+
+/* Estilos del footer */
+.footer {
+    width: 100%;
+    height: 8vh;
+}
+
+.footer-marquesina {
+    width: 100%;
+    margin: 5vh auto;
+    overflow: hidden;
+}
+
+/* Estilos para la animación del footer con marquesina */
+.footer-slide {
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+    animation: slide 10s linear infinite;
+}
+
+.footer-texto {
+    width: 500px;
+    font-family: "Funnel Display";
+    text-align: center;
+    font-size: var(--font-media);
+    color: white;
+}
+
+/* formatos extra grandes (ordenadores, 1200px para arriba) */
+@media (min-width: 1200px) {
+    .main-grid {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 18vh auto 0;
+    }
+
+    .main-texto {
+        font-size: 1.5vw;
+        line-height: 1.5em;
+    }
+}
+/* Gran formato (ordenadores, hasta 1200px )*/
+@media (max-width: 1200px) {
+    .main-grid {
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+    }
+
+    .main-texto {
+        font-size: var(--font-media);
+        line-height: 1.5em;
+    }
+}
+
+/* Formato normal (ordenadores, hasta 992px ) */
+@media (max-width: 992px) {
+    .main-grid {
+        width: 60%;
+        max-width: 800px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-img {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+/* Formato medio (tablets, hasta 768px) */
+@media (max-width: 768px) {
+    .main-grid {
+        width: 90%;
+        row-gap: 1rem;
+    }
+}
+
+/* Formato pequeño (móviles, 567px hacia abajo) */
+@media (max-width: 576px) {
+    .main-texto {
+        font-size: .9em;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideParrafo {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

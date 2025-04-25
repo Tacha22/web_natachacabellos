@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natacha_cabellos_bio</title>
+    <link rel="stylesheet" href="../css/index_personal.css">
+    <link rel="stylesheet" href="../css/index_header.css">
+    <script src="../javascript/index_header.js" defer></script>
+    <script src="../javascript/index_portafolio.js" defer></script>
+</head>
+<body>
+      <!-- Creamos la cabecera que se repetirá en todos los html y que tendrá un css específico -->
+    <header class="header">
+        <div class="cabecera">
+        <div class="cabecera-lenguaje">
+            <div class="cabecera-en">
+                <a href="../English/personal/index_personal_En.html" title="english version">EN
+                </a>
+            </div>
+            <div class="cabecera-es">
+                <a href="../Personal/index_personal.html" title="versión en español">ES
+                </a>
+            </div>
+        </div>
+        <button class="cabecera-hamburguesa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="cabecera-svg" viewBox="0 0 16 16">
+                <use xlink:href="#Hamburguesa"></use>
+            </svg>
+        </button>
+        <nav class="cabecera-nav">
+            <ul class="cabecera-menu">
+                <li class="cabecera-item isActive">
+                    <a href="index_personal.html" title="sobre la artista" class="cabereca-a">SOBRE LA ARTISTA</a>
+                </li>
+                <li class="cabecera-item">
+                    <a href="/index.html" title="PROYECTOS Y EXHIBICIONES" class="cabereca-a">PROYECTOS Y EXHIBICIONES</a>
+                </li>
+                <li class="cabecera-item">
+                    <button class="cabecera-btn">PORTAFOLIO</button>
+                    <div class="cabecera-popUp">
+                        <button class="cabecera-cierre">X</button>
+                        <div class="cabecera-texto">
+                        <h1>Descargar el portafolio en formato PDF</h1>
+                        <div class="cabecera-descarga">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <use xlink:href="#Descarga"></use>
+                          </svg>
+                        <a href="/portafolio/Portafolio_Natacha_Cabellos_Ricart.pdf" title="Portafolio" download="Natacha_Cabellos_Portafolio" class="cabecera-enlace">Portafolio_Natacha_Cabellos.PDF</a>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <li class="cabecera-item">
+                    <a href="../contacto/index_contacto.html" title="CONTACTO" class="cabereca-a">CONTACTO</a>
+                </li>
+                <li class="cabecera-item">
+                    <a href="../CV/index_CV.html" title="CV" class="cabereca-a">CV</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-grid">
+             <!-- Ponemos a disposición la imagen en varias resoluciones -->
+            <picture>
+                <source media="(min-width:992px)" srcset="assets/retrato-large.jpg">
+                <source media="(max-width:576px)" srcset="assets/retrato-small.webp">
+                <img src="assets/retrato.jpg" alt="Foto_retrato" class="main-img">
+            </picture>
+            <!-- Creamos el texto biográfico que será animado en css -->
+            <div class="main-texto">
+            <p class="main-p">Natacha Cabellos Ricart. Santiago de Chile.</p>
+            <p class="main-p inicio">
+            Vive y trabaja en Valencia, España. Artista visual y medial. Magíster en Artes Visuales y Multimedia de la U. Politécnica de Valencia, Magíster en Artes Mediales de la U. de Chile.
+            </p>
+            <p class="main-p medio">Desarrolla su obra principalmente desde la instalación y entornos digitales abordando los efectos negativos en el medioambiente global causados por el avance industrial humano, proponiendo el estudio del mundo vegetal para aprender nuevas formas de comunicación, enfocándose en a la colaboración entre especies como estrategia.</p>
+            <p class="main-p final">Ha expuesto su obra internacionalmente destacando su participación en Ars Electronica, Sección Campus 2020, Linz, Bienal de Cuenca, Ecuador 2020, Lisboa Soa 2019, Portugal y Festival Arte Sonoro Tsonami en varias oportunidades. Ha sido merecedora de diversas becas, premios y distinciones, entre ellos el Premio PAM!, Valencia España (2020), la Beca Chile Crea (2019) y el Segundo Lugar en el 5to Concurso de Arte y Tecnologías Digitales (2015).</p>
+        </div>
+    </div>
+    </main>
+     <!-- Creamos el footer tipo marquesina con los datos básicos de la artista -->
+    <footer class="footer">
+        <div class="footer-marquesina">
+            <section class="footer-slide">
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+              <h2 class="footer-texto">Chile, Santiago / Valencia, España  © Todos los derechos reservados.</h2>
+            </section>
+          </div>
+    </footer>
+    <!-- Definimos las propiedades de SVG y los cargamos arriba. -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <symbol id="Hamburguesa">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </symbol>
+        <symbol id="Descarga">
+            <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+        </symbol>
+        </svg>
+</body>
+</html>

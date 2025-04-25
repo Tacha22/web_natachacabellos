@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+    --font-media: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Funnel Display", sans-serif;
+    --color-blanco: white;
+    --color-alice: aliceblue;
+    --color-1: #c275f9;
+    --color-2: #3D8DAE;
+    --color-3: #eb8c8a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+}
+
+svg {
+    color: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* RESET */
+
+/* Carga de tipografías en el css */
+@font-face {
+    font-family: "Funnel Display";
+    src: url('../Funnel_Display/FunnelDisplay-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: "Abel";
+    src: url('../Tipografias/Abel/Abel-Regular.ttf')
+}
+
+/* Estilos del Header fijo para todos los html. */
+.header {
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.cabecera {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera-nav {
+    width: 100%;
+}
+
+/* Estilos del menú */
+.cabecera-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-media);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    gap: 1.6rem;
+}
+
+/* Animación de color del menú */
+.cabecera-item {
+    animation: color-animation 4s linear infinite;
+}
+
+.cabecera-lenguaje {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: start;
+    font-size: var(--font-media);
+    padding: 1rem;
+    gap: .3rem;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+}
+
+.cabecera-en {
+    padding: .2rem;
+    color: var(--color-blanco);
+    border: .1875rem solid var(--color-blanco);
+}
+
+/* Mouse hover cambio de color*/
+.cabecera-en:hover {
+    color: var(--color-3);
+    border: .1875rem solid var(--color-3);
+}
+
+.cabecera-es {
+    padding: .2rem;
+    color: var(--color-blanco);
+    border: .1875rem solid var(--color-blanco);
+}
+
+/* Mouse hover cambio de color*/
+.cabecera-es:hover {
+    color: var(--color-3);
+    border: .1875rem solid var(--color-3);
+}
+
+/* No se muestra en pantallas superiores a 768px*/
+.cabecera-hamburguesa {
+    display: none;
+}
+
+/* Mouse hover cambio de color*/
+.cabecera-hamburguesa:hover {
+    color: var(--color-3);
+    border: .1875rem solid var(--color-3);
+}
+
+.cabecera-btn {
+    cursor: pointer;
+}
+
+/* Display del menú en dispositivos pequeños*/
+.cabecera-popUp {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+/* btn para cerrar el portafolio*/
+.cabecera-cierre {
+    width: 40px;
+    background-color: var(--color-blanco);
+    color: var(--color-2);
+    padding: .8rem;
+    font-size: var(--font-media);
+    border-radius: 10%;
+    margin: 5% 75% 1rem;
+    cursor: pointer;
+}
+
+.cabecera-cierre:hover {
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+/* Caja donde se alberga el PDF descargable*/
+.cabecera-texto {
+    font-family: "Abel";
+    background-color: var(--color-2);
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+/* Estilo del título*/
+h1 {
+    font-size: 1.3em;
+    color: var(--color-alice);
+}
+
+.cabecera-descarga {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    color: var(--color-alice);
+}
+
+/* Estilo del enlace de descarga*/
+.cabecera-enlace {
+    font-size: var(--font-media);
+    color: var(--color-alice);
+}
+
+.cabecera-enlace:hover {
+    color: var(--color-3);
+}
+
+/* formatos extra grandes (ordenadores, 1200px para arriba) */
+@media (min-width: 1200px) {
+    .cabecera-menu {
+        font-size: 1.3vw;
+        gap: 3rem;
+    }
+
+    .cabecera-cierre {
+        width: 3vw;
+        font-size: 1.5vw;
+        margin: 7% 77% 1rem;
+    }
+
+    .cabecera-texto {
+        padding: 5rem;
+        gap: 2rem;
+    }
+
+    h1, .cabecera-enlace, .cabecera-lenguaje {
+        font-size: 1.5vw;
+    }
+}
+
+/* Gran formato (ordenadores, hasta 1200px )*/
+@media (max-width: 1200px) {
+    .cabecera-menu {
+        font-size: 1.2vw;
+    }
+}
+
+/* Formato normal (ordenadores, hasta 992px ) */
+@media (max-width: 992px) {
+    .cabecera-lenguaje {
+        font-size: .8rem;
+        padding: 0;
+    }
+
+    .cabecera {
+        width: 95%;
+    }
+
+    .cabecera-menu {
+        gap: .7rem;
+        font-size: 1.8vw;
+    }
+
+    .cabecera-texto {
+        gap: 1rem;
+        padding: 5rem 2rem;
+    }
+}
+
+/* Formato medio (tablets, hasta 768px) */
+@media (max-width: 768px) {
+    .cabecera {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .cabecera-hamburguesa {
+        width: 65px;
+        display: block;
+        border: 3px solid var(--color-blanco);
+        padding: .8rem;
+        margin: 0 1rem 0;
+        color: var(--color-blanco);
+        cursor: pointer;
+    }
+
+    .cabecera-lenguaje {
+        font-size: var(--font-media);
+        padding: 2rem;
+    }
+
+    .cabecera-nav {
+        display: none;
+    }
+
+    .cabecera-nav.isActive {
+        width: 100%;
+        display: block;
+    }
+
+    .cabecera-menu {
+        background-color: rgba(0, 0, 0, 0.677);
+        padding: 2rem 1rem;
+        min-height: 90vh;
+        margin-left: 10vw;
+        font-size: .8em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .cabecera-popUp {
+        width: 63%;
+        min-height: 20vh;
+        position: fixed;
+        top: 35%;
+        left: 36%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .cabecera-texto {
+        font-family: "Abel";
+        background-color: #3d8cae9f;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 1rem;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.8vw;
+    }
+
+    .cabecera-enlace {
+        font-size: 2.3vw;
+    }
+
+    .cabecera-cierre {
+        font-size: .8rem;
+        padding: .5rem;
+        margin: 0 0 .5rem;
+        cursor: pointer;
+    }
+}
+
+/* Formato pequeño (móviles, 567px hacia abajo) */
+@media (max-width: 576px) {
+    .cabecera-menu {
+        font-size: var(--font-media);
+    }
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}

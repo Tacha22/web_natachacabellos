@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natacha_cabellos</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index_header.css">
+    <script src="../javascript/index_en.js" defer></script>
+    <script src="../javascript/index_header.js" defer></script>
+    <script src="../javascript/index_portafolio.js" defer></script>
+</head>
+<body>
+      <!-- Creamos la cabecera que se repetirá en todos los html y que tendrá un css específico -->
+    <header class="header">
+        <div class="cabecera">
+        <div class="cabecera-lenguaje">
+            <div class="cabecera-en">
+                <a href="Index_en.html" title="english version">EN
+                </a>
+            </div>
+            <div class="cabecera-es">
+                <a href="../index.html" title="versión en español">ES
+                </a>
+            </div>
+        </div>
+        <button class="cabecera-hamburguesa" title="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="cabecera-svg" viewBox="0 0 16 16">
+                <use xlink:href="#Hamburguesa"></use>
+            </svg>
+        </button>
+        <nav class="cabecera-nav">
+            <ul class="cabecera-menu">
+                <li class="cabecera-item isActive">
+                    <a href="/English/personal/index_personal_En.html" title="about the artist" class="cabereca-a">ABOUT THE ARTIST</a>
+                </li>
+                <li class="cabecera-item">
+                    <a href="Index_en.html" title="PROYECTS AND EXHIBITIONS" class="cabereca-a">PROYECTS AND EXHIBITIONS</a>
+                </li>
+                <li class="cabecera-item">
+                    <button class="cabecera-btn" title="portfolio">PORTFOLIO</button>
+                    <div class="cabecera-popUp">
+                        <button class="cabecera-cierre" title="close">X</button>
+                        <div class="cabecera-texto">
+                        <h1 class="cabecera-h1">Download Portfolio like a PDF file</h1>
+                        <div class="cabecera-descarga">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="cabecera-download" viewBox="0 0 16 16">
+                            <use xlink:href="#Descarga"></use>
+                          </svg>
+                        <a href="/portafolio/Portfolio_Natacha_Cabellos_English.pdf" title="portfolio" download="Natacha_Cabellos_Portfolio" class="cabecera-enlace">Natacha_Cabellos_Portfolio.PDF</a>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <li class="cabecera-item">
+                    <a href="/English/contact/contact_en.html" title="CONTACT" class="cabereca-a">CONTACT</a>
+                </li>
+                <li class="cabecera-item">
+                    <a href="/English/CV_En/index_cv_en.html" title="CV" class="cabereca-a">CV</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+     <!-- Creamos el cuerpo del proyecto. Para todos los proyectos será el mismo. -->
+    <main class="main">
+        <div class="main-wrapper">
+            <section class="main-proyecto">
+                <button class="main-btn isActive" title="project_1">
+                    <!-- Ponemos a disposición las imágenes en varias resoluciones -->
+                <picture>
+                    <source media="(min-width:992px)" srcset="/assets/proyecto_0/portada_0-large.png">
+                    <source media="(max-width:576px)" srcset="/assets/proyecto_0/portada_0-small.png">
+                    <img src="/assets/proyecto_0/portada_0.png" alt="Proyect_0_image" class="main-img isActive">
+                </picture>
+                </button>
+                <div class="main-overlay">
+                    <!-- Definimos el nombre que tendrá cada proyecto -->
+                    <h2 class="main-texto isActive">PUYA PROJECT</h2>
+                </div>
+            </section>
+              <!-- Definimos un lightbox tipo carrusel para mostrar las imágenes de cada proyecto. Es activado con javascript. -->
+            <div class="Lightbox">
+                <div class="Lightbox-caja">
+                          <!-- Botón de cierre del lightbox -->
+                <button class="Lightbox-btn" title="close">X</button>
+                <div class="Lightbox-wraper">
+                <!-- Las imágenes serán mostradas en carrousel -->
+                    <div class="Lightbox-img">
+                        <div class="Carrousel-container">
+                        </div>
+                        <!-- Botón de siguiente y anterior del carousel -->
+                        <button class="Carrousel-arrow Siguiente" title="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-caret-right" viewBox="0 0 16 16">
+                                <use xlink:href="#Flecha_siguiente"></use>
+                            </svg>
+                        </button>
+                        <button class="Carrousel-arrow Anterior" title="before">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-caret-left" viewBox="0 0 16 16">
+                                <use xlink:href="#Flecha_anterior"></use>
+                            </svg>
+                        </button>
+                        <!-- Botones del carrousel -->
+                        <ul class="Carrousel-ul">
+                            <li class="Carrousel-li">
+                                <button class="Carrousel-btn" title="firts image"></button>
+                            </li>
+                            <li class="Carrousel-li">
+                                <button class="Carrousel-btn" title="second image"></button>
+                            </li>
+                            <li class="Carrousel-li">
+                                <button class="Carrousel-btn" title="third image"></button>
+                            </li>
+                            <li class="Carrousel-li">
+                                <button class="Carrousel-btn" title="four image"></button>
+                            </li>
+                            <li class="Carrousel-li">
+                                <button class="Carrousel-btn" title="fifth image"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Se define una estructura que contiene el texto descriptivo en javascript -->
+                    <div class="Lightbox-texto">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_2">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_1/portada_1-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_1/portada_1-small.png">
+                        <img src="/assets/proyecto_1/Portada_1.png" alt="Project_1_image" class="main-img">
+                    </picture>
+            </button>
+                <div class="main-overlay">
+                    <h2 class="main-texto">SUMERGE THE BODY</h2>
+                </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_3">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_2/portada_2-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_2/portada_2-small.png">
+                        <img src="/assets/proyecto_2/portada_2.png" alt="Project_2_image" class="main-img">
+                    </picture>
+                </button>
+                <div class="main-overlay">
+                    <h2 class="main-texto">FLYING IN A STRAIGHT LINE, FALLING IN A SPIRAL</h2>
+                </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_4">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_3/portada_3-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_3/portada_3-small.png">
+                        <img src="/assets/proyecto_3/portada_3.png" alt="Project_3_image" class="main-img">
+                    </picture>
+                </button>
+                <div class="main-overlay">
+                    <h2 class="main-texto">PROTOTYPES FOR COEXISTENCE nº3</h2>
+                </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_5"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_4/portada_4-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_4/portada_4-small.png">
+                        <img src="/assets/proyecto_4/portada_4.png" alt="Project_4_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">LABORATORY OF AFFECTIONS</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_6"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_5/portada_5-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_5/portada_5-small.png">
+                        <img src="/assets/proyecto_5/Portada_5.png" alt="Project_5_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">OF WASTE AND DUST</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_7"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_6/portada_6-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_6/portada_6-small.png">
+                        <img src="/assets/proyecto_6/Portada_6.png" alt="Project_6_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">LABORATORY FOR A MIGRATORY PLANT</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_8"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_7/portada_7-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_7/portada_7-small.png">
+                        <img src="/assets/proyecto_7/Portada_7.png" alt="Project_7_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">DEFORMATION AND EFFORT</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_9"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_8/portada_8-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_8/portada_8-small.png">
+                        <img src="/assets/proyecto_8/Portada_8.png" alt="Project_8_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">RESISTANCE</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_10"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_9/portada_9-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_9/portada_9-small.png">
+                        <img src="/assets/proyecto_9/Portada_9.png" alt="Project_9_image" loading="lazy" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">LANDSCAPE UNDER CONSTRUCTION</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_11"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_10/portada_10-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_10/portada_10-small.png">
+                        <img src="/assets/proyecto_10/Portada_10.png" alt="Project_10_image" loading="lazy"
+                        class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">GEOLOGICAL FAULT</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_12"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_11/portada_11-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_11/portada_11-small.png">
+                        <img src="/assets/proyecto_11/Portada_11.png" alt="Project_11_image" loading="lazy"
+                        class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">REST AREA</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_13"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_12/portada_12-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_12/portada_12-small.png">
+                        <img src="/assets/proyecto_12/Portada_12.png" alt="Project_12_image" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">OUTDATED LABORATORY</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_14"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_13/portada_13-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_13/portada_13-small.png">
+                        <img src="/assets/proyecto_13/Portada_13.png" alt="Project_13_image" loading="lazy" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">REENCOUNTER</h2>
+            </div>
+            </section>
+            <section class="main-proyecto">
+                <button class="main-btn" title="project_15"> 
+                    <picture>
+                        <source media="(min-width:992px)" srcset="/assets/proyecto_14/portada_14-large.png">
+                        <source media="(max-width:576px)" srcset="/assets/proyecto_14/portada_14-small.png">
+                        <img src="/assets/proyecto_14/Portada_14.png" alt="Project_14_image" loading="lazy" class="main-img">
+                    </picture>
+            </button>
+            <div class="main-overlay">
+                <h2 class="main-texto">THE NATURE OF EMPTINESS</h2>
+            </div>
+            </section>
+        </div>
+    </main>
+     <!-- Creamos el footer tipo marquesina con los datos básicos de la artista -->
+    <footer class="footer">
+        <div class="footer-marquesina">
+            <section class="footer-slide">
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+              <h4 class="footer-texto">Chile, Santiago / Valencia, Spain © All rights reserved.</h4>
+            </section>
+          </div>
+    </footer>
+    <!-- Definimos las propiedades de SVG y los cargamos arriba. -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <symbol id="Hamburguesa">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </symbol>
+        <symbol id="Descarga">
+            <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+        </symbol>
+        <symbol id="Flecha_siguiente">
+            <path
+                d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+        </symbol>
+        <symbol id="Flecha_anterior">
+            <path
+                d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
+        </symbol>
+        </svg>
+</body>
+</html>

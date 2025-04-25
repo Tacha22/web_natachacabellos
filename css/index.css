@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+    --font-media: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+    --color-alice: aliceblue;
+}
+
+body {
+    background-image: radial-gradient(rgb(153, 153, 153) 5%, rgb(78, 78, 78) 15%, rgb(0, 0, 0) 60%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+}
+
+svg {
+    color: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* RESET */
+
+/* Carga de tipografías en el css */
+@font-face {
+    font-family: "Funnel Display";
+    src: url('../Funnel_Display/FunnelDisplay-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url('../Roboto_Mono/static/RobotoMono-Light.ttf')
+}
+
+/* Estilos de la web principal */
+.main {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Proyectos divididos en 4 columnas, cambia según responsive. */
+.main-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, .8fr);
+    margin: 200px auto 100px;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.main-proyecto {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* Las imágenes principales actúan como botón que abre el proyecto. */
+.main-btn {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-overlay {
+    min-height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-texto {
+    width: 100%;
+    color: var(--color-alice);
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 0;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* El título de cada proyecto es visible al hacer mouseover sobre las imágenes principales. */
+.main-texto.isActive {
+    opacity: 1;
+}
+
+.main-img {
+    width: 100%;
+    margin: auto;
+    filter: drop-shadow(5px 15px 5px rgb(0, 0, 0));
+    transform: scale(1);
+    transition: transform 1s ease;
+}
+
+/* transiciónn de color al hacer hover sobre las imágenes*/
+.main-img:hover {
+    background-color: rgba(182, 75, 239, 0.267);
+    box-shadow: inset -10px 10px 60px 20px cornflowerblue;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* Estilos del lightbox al abrir los proyectos*/
+.Lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #39393946;
+    /*Transparencia*/
+    backdrop-filter: blur(5px);
+    /*Transparencia tras el elemento*/
+    z-index: 1;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+/* Estilos de la caja contenedora */
+.Lightbox-caja {
+    width: 60%;
+    /* tuve que establecer un heigh para que todas las cajas de texto e imagen tengan el mismo margin top, sino, se ajustan según el largo del texto y quedan fuera de visión. */
+    height: 1100px;
+    margin: 45% auto 5%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos botón cierre del lightbox. */
+.Lightbox-btn {
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: .8rem;
+    font-size: var(--font-media);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.Lightbox-btn:hover {
+    background-color: var(--color-alice);
+}
+
+/* Estilos del wrapper contenedor del carrusel y el texto. */
+.Lightbox-wraper {
+    background-color: rgba(0, 0, 0, 0.626);
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    border-radius: 5%;
+}
+
+/* Estilos para las imágenes del carrousel. */
+.Lightbox-img {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para la descripción de cada proyecto. */
+.Lightbox-texto {
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+    color: var(--color-alice);
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
+    font-size: var(--font-media);
+}
+
+/* Estilos para separar etiquetas <p> del mencionadas en javascript */
+p {
+    margin-bottom: 1rem;
+}
+
+/* El carrousel está escondido hasta que se activa con javascript */
+.Carrousel-img {
+    pointer-events: none
+}
+
+.Carrousel-container {
+    width: 500%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transition: all .5s ease;
+    transform: translateX(0);
+}
+
+/* Estilos de las flechas y botones del carrousel. */
+.Carrousel-arrow {
+    width: 5vw;
+    background-color: transparent;
+    color: #3D8DAE;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    cursor: pointer;
+}
+
+.Siguiente {
+    right: 0;
+}
+
+.Anterior {
+    left: 0;
+}
+
+.Carrousel-ul {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Carrousel-btn {
+    width: 1vw;
+    height: 1vw;
+    background-color: #3D8DAE;
+    border-radius: 50%;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.Carrousel-btn:hover {
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+}
+
+/* Estilos del footer */
+.footer-marquesina {
+    width: 100%;
+    margin: 5vh auto;
+    overflow: hidden;
+}
+
+/* Estilos para la animación del footer con marquesina */
+.footer-slide {
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+    animation: slide 10s linear infinite;
+}
+
+.footer-texto {
+    width: 500px;
+    font-family: "Funnel Display";
+    text-align: center;
+    font-size: var(--font-media);
+    color: white;
+}
+
+/* formatos extra grandes (ordenadores, 1200px para arriba) */
+@media (min-width: 1200px) {
+    .main-wrapper {
+        gap: 2rem;
+    }
+
+    .main-texto {
+        font-size: 1.3vw;
+    }
+
+    .Lightbox {
+        height: 100%;
+    }
+
+    .Lightbox-caja {
+        width: 40%;
+        height: 80%;
+        margin: 10% auto 10%;
+    }
+
+    .Lightbox-texto {
+        font-size: 1vw;
+    }
+}
+
+/* Gran formato (ordenadores, hasta 1200px )*/
+@media (max-width: 1200px) {
+    .Lightbox-texto {
+        font-size: var(--font-media);
+    }
+}
+
+/* Formato normal (ordenadores, hasta 992px ) */
+@media (max-width: 992px) {
+    .main-wrapper {
+        grid-template-columns: repeat(3, .8fr);
+        width: 90%;
+    }
+
+    .cabecera-lenguaje {
+        display: none;
+    }
+
+    .cabecera-menu {
+        gap: 1rem;
+    }
+
+    .Lightbox-caja {
+        width: 70%;
+        height: 900px;
+    }
+}
+
+/* Formato medio (tablets, hasta 768px) */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        /*Que no aparezca la barra scroll en pantallas pequeñas*/
+        display: none;
+    }
+
+    .main-wrapper {
+        grid-template-columns: repeat(2, .8fr);
+        justify-content: center;
+        width: 90%;
+    }
+
+    .Lightbox-caja {
+        width: 80%;
+        height: 900px;
+        /* necesito esta medida para fijar el texto*/
+    }
+}
+
+/* Formato pequeño (móviles, 567px hacia abajo) */
+@media (max-width: 576px) {
+    .main-wrapper {
+        grid-template-columns: repeat(1, .8fr);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Lightbox-texto {
+        font-size: .9em;
+    }
+
+    .Lightbox-caja {
+        width: 90%;
+        height: 800px;
+        /* necesito esta medida para fijar el texto*/
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
