@@ -78,12 +78,12 @@ button {
 /* Carga de tipografías en el css */
 @font-face {
   font-family: "Roboto Mono";
-  src: url("/Tipografias/Roboto_Mono/");
+  src: url("/Tipografias/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Funnel Display";
-  src: url("/Tipografias/Funnel_Display/");
+  src: url("/Tipografias/Funnel_Display/FunnelDisplay-VariableFont_wght.ttf");
 }
 
 /* Estilos del Contacto */
