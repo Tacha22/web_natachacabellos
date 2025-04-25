@@ -77,6 +77,7 @@ button {
 /* Carga de tipografías en el css */
 @font-face {
     font-family: "Abel";
+    font-display: optional;
     src: url('/Tipografias/Abel/Abel-Regular.ttf')
 }
 
