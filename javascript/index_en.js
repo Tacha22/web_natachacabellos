@@ -35,11 +35,11 @@ const proyectos = [
       "<p>A reactive human-digital-image piece has been proposed using viewers CO2 (carbon dioxide) emissions to trigger and generate a drawing-animation produced on the TouchDesigner generative environments platform, which reacts in a linked way to the input of ppm (parts per million) values from a CO2 sensor arranged in the exhibition space within a root. </p>" +
       "<p>In the center of the screen we see a 3D model of a Chagual totem [mother totem or new hybrid species] a virtual plant space that has been worked in Blender relating all the factors that would be essential for the preservation of the species: the seed, the plant, the cheap, the mice, the butterfly, the human being, the pollen, the technological resources, other plant species, etc. using as visual reference the images obtained in the field trips associated with the project. On this background, each time the ppm count obtained through the sensor goes up, the values associated with the variant that changes the position, color and speed of a group of butterflies fluttering around the Chagual are modified; the more ppm, the more butterflies in space.</p>",
     images: [
-      "../assets/proyecto_0/Foto_a.jpg",
-      "../assets/proyecto_0/Foto_b.jpg",
-      "../assets/proyecto_0/Foto_c.jpg",
-      "../assets/proyecto_0/Foto_d.jpg",
-      "../assets/proyecto_0/Foto_e.jpg",
+      "./assets/proyecto_0/Foto_a.jpg",
+      "./assets/proyecto_0/Foto_b.jpg",
+      "./assets/proyecto_0/Foto_c.jpg",
+      "./assets/proyecto_0/Foto_d.jpg",
+      "./assets/proyecto_0/Foto_e.jpg",
     ],
   },
   {
@@ -48,11 +48,11 @@ const proyectos = [
       "<p> In 1951, at the age of nine months, my mother lost the hearing in her right ear after an infection in the eardrum, a problem that was not solved until fifteen years later with the first transplant performed in Chile. Despite the operation my mother was never able to be underwater and in my memories she is always found on the seashore, never submerging her body; what would it be like to have never heard underwater; to have never experienced the sound variations of the waves, the stones, the bubbles? </p>" +
       "<p> Submerging the body is an action-installation consisting of ten sound devices composed of a siliconized right ear and a single-channel direct audio system that reproduce in real time the underwater soundscape captured underwater. The sound is heard upon contact with the mass of ears drifting in the sea, establishing a link between the prosthesis, the water and the listener's ear, as if submerging the body. <p>",
     images: [
-      "/assets/proyecto_1/Foto_a.jpg",
-      "/assets/proyecto_1/Foto_b.jpg",
-      "/assets/proyecto_1/Foto_c.jpg",
-      "/assets/proyecto_1/Foto_d.jpg",
-      "/assets/proyecto_1/Foto_e.jpg",
+      "./assets/proyecto_1/Foto_a.jpg",
+      "./assets/proyecto_1/Foto_b.jpg",
+      "./assets/proyecto_1/Foto_c.jpg",
+      "./assets/proyecto_1/Foto_d.jpg",
+      "./assets/proyecto_1/Foto_e.jpg",
     ],
   },
   {
