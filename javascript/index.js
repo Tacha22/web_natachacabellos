@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 //Definimos variables y constanes para los títulos del html principal.
 const mainBtn = document.querySelectorAll(".main-btn");
