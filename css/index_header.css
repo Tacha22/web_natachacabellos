@@ -90,6 +90,11 @@ button {
     src: url('../Tipografias/Abel/Abel-Regular.ttf')
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url('../Tipografias/Roboto_Mono/RobotoMono-VariableFont_wght.ttf')
+}
+
 /* Estilos del Header fijo para todos los html. */
 .header {
     width: 100%;
