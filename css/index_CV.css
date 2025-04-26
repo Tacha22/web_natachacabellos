@@ -76,7 +76,7 @@ button {
 /* Carga de tipografías en el css */
 @font-face {
     font-family: "Abel";
-    src: url('/Tipografias/Abel/Abel-Regular.ttf')
+    src: url('../Tipografias/Abel/Abel-Regular.ttf')
 }
 
 /* Estilos del CV */
