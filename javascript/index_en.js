@@ -29,7 +29,7 @@ mainBtn.forEach(function (eachBtn, index) {
 // Estructura de datos para proyectos, descripciones e imágenes.
 const proyectos = [
   {
-    title: "PUYA PROJECT",
+    title: "PROYECTO PUYA",
     description:
       "<p>How can we stop being part of the problem and become part of the solution through an interspecies alliance, including technological elements? </p>" +
       "<p>A reactive human-digital-image piece has been proposed using viewers CO2 (carbon dioxide) emissions to trigger and generate a drawing-animation produced on the TouchDesigner generative environments platform, which reacts in a linked way to the input of ppm (parts per million) values from a CO2 sensor arranged in the exhibition space within a root. </p>" +
@@ -43,7 +43,7 @@ const proyectos = [
     ],
   },
   {
-    title: "SUMERGE THE BODY",
+    title: "SUMERGIR EL CUERPO",
     description:
       "<p> In 1951, at the age of nine months, my mother lost the hearing in her right ear after an infection in the eardrum, a problem that was not solved until fifteen years later with the first transplant performed in Chile. Despite the operation my mother was never able to be underwater and in my memories she is always found on the seashore, never submerging her body; what would it be like to have never heard underwater; to have never experienced the sound variations of the waves, the stones, the bubbles? </p>" +
       "<p> Submerging the body is an action-installation consisting of ten sound devices composed of a siliconized right ear and a single-channel direct audio system that reproduce in real time the underwater soundscape captured underwater. The sound is heard upon contact with the mass of ears drifting in the sea, establishing a link between the prosthesis, the water and the listener's ear, as if submerging the body. <p>",
