@@ -78,7 +78,7 @@ button {
 @font-face {
     font-family: "Abel";
     font-display: optional;
-    src: url('/Tipografias/Abel/Abel-Regular.ttf')
+    src: url('../Tipografias/Abel/Abel-Regular.ttf')
 }
 
 /* Estilos de la biografía */
