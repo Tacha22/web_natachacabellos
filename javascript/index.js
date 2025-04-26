@@ -183,11 +183,11 @@ const proyectos = [
     description:
       "<p> Serie de tres dispositivos sonoros que son activados cuando un ave se posa sobre una cuerda de goma. El movimiento producido en la cuerda activa un sensor de movimiento conectado a un Arduino provocando un sonido como el trino de un pájaro en 8 Bits que se reproduce por unos parlantes dispuestos dentro de una casita de pájaro. Estas piezas fueron realizadas específicamente para la muestra 'En el fondo del lago' Local Arte Contemporáneo, que inauguraba cada dos meses una nueva muestra sobre la muestra anterior. En el espacio se encontraba la obra del artista Cristián Salineros quién a demás de una escultura dispuso 4 Aves Diamantes a dialogar con las obras. </p>",
     images: [
-      "/assets/proyecto_11/Foto_a.jpg",
-      "/assets/proyecto_11/Foto_b.jpg",
-      "/assets/proyecto_11/Foto_c.jpg",
-      "/assets/proyecto_11/Foto_d.jpg",
-      "/assets/proyecto_11/Foto_e.jpg",
+      "assets/proyecto_11/Foto_a.jpg",
+      "assets/proyecto_11/Foto_b.jpg",
+      "assets/proyecto_11/Foto_c.jpg",
+      "assets/proyecto_11/Foto_d.jpg",
+      "assets/proyecto_11/Foto_e.jpg",
     ],
   },
   {
@@ -195,11 +195,11 @@ const proyectos = [
     description:
       "<p> En el Parque Forestal, con su entorno de árboles exóticos de hoja caduca que habitan en Chile, con todos los problemas que presentan para la ciudad y su entorno, se emplaza Laboratorio Caduco, una ficción de laboratorio para el crecimiento de un árbol Quillay, donde se disponen elementos simuladores de naturaleza que impulsan su desarrollo a través de la luz y el agua, así como también elementos tecnológicos de observación de crecimiento. Esta ficción de laboratorio juega con el absurdo, considerando que el Quillay es un árbol nativo chileno que crece sin necesidad de la intervención humana, pero que en el contexto que hoy estamos viviendo como sociedad, de crear cada vez más plazas duras o espacios verdes con árboles exóticos de rápido crecimiento, el cuidado de crecimiento y la protección del árbol chileno se ha vuelto una realidad.</p>",
     images: [
-      "/assets/proyecto_12/Foto_a.jpg",
-      "/assets/proyecto_12/Foto_b.jpg",
-      "/assets/proyecto_12/Foto_c.jpg",
-      "/assets/proyecto_12/Foto_d.jpg",
-      "/assets/proyecto_12/Foto_e.jpg",
+      "assets/proyecto_12/Foto_a.jpg",
+      "assets/proyecto_12/Foto_b.jpg",
+      "assets/proyecto_12/Foto_c.jpg",
+      "assets/proyecto_12/Foto_d.jpg",
+      "assets/proyecto_12/Foto_e.jpg",
     ],
   },
   {
@@ -208,11 +208,11 @@ const proyectos = [
       "<p> Reencuentro, surge del hallazgo de dos mitades de una misma piedra encontradas en lugares distantes entre sí en una playa del litoral chileno. La primera parte la vi con la mitad del cuerpo enterrado en la arena, era sólo media piedra y por su aspecto común no llamó mi atención. La segunda parte la hallé al final de una gran escalera que subía a la cima de una quebrada, y al ver la gran similitud con la piedra partida enterrada en la arena, fui al encuentro con su otra mitad en la mano. </p>" +
       "<p> Reencuentro consiste en la manipulación de las dos partes de esa piedra, en la que cada mitad es accionada por un motor que genera un movimiento de vaivén, el cuál produce el distanciamiento de las partes y su encuentro en el centro de la pieza, donde una mitad persigue a la otra y a veces se reúnen, formando por unos segundos la piedra completa. </p>",
     images: [
-      "/assets/proyecto_13/Foto_a.jpg",
-      "/assets/proyecto_13/Foto_b.jpg",
-      "/assets/proyecto_13/Foto_c.jpg",
-      "/assets/proyecto_13/Foto_d.jpg",
-      "/assets/proyecto_13/Foto_e.jpg",
+      "assets/proyecto_13/Foto_a.jpg",
+      "assets/proyecto_13/Foto_b.jpg",
+      "assets/proyecto_13/Foto_c.jpg",
+      "assets/proyecto_13/Foto_d.jpg",
+      "assets/proyecto_13/Foto_e.jpg",
     ],
   },
   {
@@ -221,11 +221,11 @@ const proyectos = [
       "<p> 'La naturaleza del vacío' corresponde a una investigación sobre los espacios inconclusos que van quedando en zonas gentrificadas, edificaciones que por no ser habitadas van mermando sus condiciones físicas hasta su destrucción, convirtiéndose en espacios baldíos o terrenos verdes que son dejados a su suerte. </p>" +
       "<p> En el proceso del proyecto, surge más atención por los lugares verdes que van naciendo y su apropiación por parte de los vecinos, muchas veces tomándose esos terreno sin edificar y construyéndolos en plazas o en alguna otra área común. Con este trabajo pretendo reflexionar sobre la importancia de esos espacios de distracción y placidez y los efectos de la naturaleza sobre el individuo, pero también, sobre cómo las ciudades, pueblos, localidades, etc. al estar cada vez más urbanizados, con el afán de una mayor conectividad y prosperidad, van perdiendo esos sitios verdes y se van desconectando de la naturaleza, teniendo que recurrir a crear áreas verdes artificiales para poseer zonas de bienestar, transformándose en una seguidilla de destrucción y construcción. De este modo, el trabajo corresponde a tres piezas que ficcionan factores ambientales sobre elementos naturales, dialogando entre el área verde que tiene que ser reconstruida dentro de un terreno altamente urbanizado y el sitio baldío donde sus vecinos construyen espacios comunes con sus propias manos. </p>",
     images: [
-      "/assets/proyecto_14/Foto_a.jpg",
-      "/assets/proyecto_14/Foto_b.jpg",
-      "/assets/proyecto_14/Foto_c.jpg",
-      "/assets/proyecto_14/Foto_d.jpg",
-      "/assets/proyecto_14/Foto_e.jpg",
+      "assets/proyecto_14/Foto_a.jpg",
+      "assets/proyecto_14/Foto_b.jpg",
+      "assets/proyecto_14/Foto_c.jpg",
+      "assets/proyecto_14/Foto_d.jpg",
+      "assets/proyecto_14/Foto_e.jpg",
     ],
   },
 ];
